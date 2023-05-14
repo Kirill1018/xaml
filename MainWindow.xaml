@@ -1,0 +1,31 @@
+﻿<Window x:Class="xaml.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xaml"
+        mc:Ignorable="d"
+        Title="options" Height="450" Width="800">
+    <StackPanel>
+        <Label>visual experience</Label>
+        <Label>color theme:</Label>
+        <ComboBox>
+            <ComboBoxItem IsSelected="True">dark</ComboBoxItem>
+            <ComboBoxItem>light</ComboBoxItem>
+        </ComboBox>
+        <CheckBox IsChecked="True">apply title case styling to menu bar</CheckBox>
+        <CheckBox IsChecked="True">automatically adjust visual experience based on client performance</CheckBox>
+        <CheckBox Background="Gray" IsChecked="True">enable rich client visual experience</CheckBox>
+        <CheckBox Background="Gray" IsChecked="True">use hardware graphics acceleration if available</CheckBox>
+        <TextBlock>visual studio's currently using hardware-accelerated rendering. The visual experience settings automatically change based on system</TextBlock>
+        <TextBox>10</TextBox>
+        <TextBlock>items shown in window menu</TextBlock>
+        <TextBox>10</TextBox>
+        <TextBlock>items shown in recently used files list</TextBlock>
+        <CheckBox IsChecked="True">show status bar</CheckBox>
+        <CheckBox IsChecked="True">close button affects active tool window only</CheckBox>
+        <CheckBox>auto hide button affects active tool window only</CheckBox>
+        <Button BorderBrush="blue" BorderThickness="1">ok</Button>
+        <Button>cancel</Button>
+    </StackPanel>
+</Window>
